@@ -39,11 +39,24 @@ MURO is a modern, sleek Android application designed to deliver your daily dose 
 3.  Sync the project with Gradle files.
 4.  Run the app on an emulator or a physical device (API 24+).
 
+## 🚧 Roadmap
+MURO is currently in active development! 
+- **Version 2.0 (Coming Soon):** Integration with a local database (Room) for saving favorite facts.
+- **Version 2.1:** User authentication and global leaderboard.
+- Stay tuned for more updates!
+
+## 📩 Feedback & Connect
+I would love to hear your thoughts or suggestions! 
+Feel free to reach out for feedback or just to say hi:
+- **Email:** [prateek.das2025@vitbhopal.ac.in](mailto:prateek.das2025@vitbhopal.ac.in) (or your preferred email)
+- **LinkedIn:** [Prateek Das](https://www.linkedin.com/in/prateek-das-a45215252/)
+
+**Feel free to share this project with fellow developers and fact-checkers!** 🌟
+
 ## 👨‍💻 Developer
 
 **Prateek Das**
 -   Registration ID: 25BCE10599
--   [LinkedIn](https://www.linkedin.com/in/prateek-das-a45215252/)
 -   [GitHub](https://github.com/Amazingdude1525/)
 
 ---
