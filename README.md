@@ -1,4 +1,5 @@
 # MURO 🧠 - The Fact Check App
+<sub>By Prateek Das</sub>
 
 MURO is a modern, sleek Android application designed to deliver your daily dose of fascinating facts with a premium user experience. Built entirely using **Jetpack Compose**, it features a dynamic UI, real-time weather integration, and a social-like feed for fact enthusiasts.
 
@@ -23,11 +24,9 @@ MURO is a modern, sleek Android application designed to deliver your daily dose 
 
 ## 📸 Screenshots
 
-*(Add your screenshots here later)*
-
-| Splash Screen | Main Feed | Nexus (Random Facts) |
+| Main Feed | Nexus (Facts) | Profile |
 | :---: | :---: | :---: |
-| ![Splash](https://via.placeholder.com/200x400?text=Splash+Screen) | ![Feed](https://via.placeholder.com/200x400?text=Feed+Screen) | ![Nexus](https://via.placeholder.com/200x400?text=Nexus+Screen) |
+| ![Feed](screenshots/feed.png) | ![Nexus](screenshots/nexus.png) | ![Profile](screenshots/profile.png) |
 
 ## 🏗 Installation
 
@@ -48,7 +47,7 @@ MURO is currently in active development!
 ## 📩 Feedback & Connect
 I would love to hear your thoughts or suggestions! 
 Feel free to reach out for feedback or just to say hi:
-- **Email:** [prateek.das2025@vitbhopal.ac.in](mailto:prateek.das2025@vitbhopal.ac.in) (or your preferred email)
+- **Email:** [prateek.das2025@vitbhopal.ac.in](mailto:prateek.das2025@vitbhopal.ac.in)
 - **LinkedIn:** [Prateek Das](https://www.linkedin.com/in/prateek-das-a45215252/)
 
 **Feel free to share this project with fellow developers and fact-checkers!** 🌟
