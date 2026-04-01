@@ -33,7 +33,7 @@ MURO is a modern, sleek Android application designed to deliver your daily dose 
 
 1.  Clone the repository:
     ```bash
-    git clone https://github.com/dev-pd-1525/Muro.git
+    git clone https://github.com/Amazingdude1525/Muro.git
     ```
 2.  Open the project in **Android Studio (Ladybug or newer)**.
 3.  Sync the project with Gradle files.
@@ -44,7 +44,7 @@ MURO is a modern, sleek Android application designed to deliver your daily dose 
 **Prateek Das**
 -   Registration ID: 25BCE10599
 -   [LinkedIn](https://www.linkedin.com/in/prateek-das-a45215252/)
--   [GitHub](https://github.com/dev-pd-1525/)
+-   [GitHub](https://github.com/Amazingdude1525/)
 
 ---
 
