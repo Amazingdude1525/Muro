@@ -172,10 +172,14 @@ fun FeedScreen(surface: Color, text: Color, accent: Color, posts: List<String>, 
     LaunchedEffect(Unit) {
         withContext(Dispatchers.IO) {
             try {
+                // Use HTTPS explicitly
                 val json = URL("https://api.open-meteo.com/v1/forecast?latitude=23.25&longitude=77.41&current_weather=true").readText()
                 val current = JSONObject(json).getJSONObject("current_weather")
                 weatherInfo = "${current.getString("temperature")}°C | ${current.getString("windspeed")} km/h"
-            } catch (e: Exception) { weatherInfo = "Weather Unavailable" }
+            } catch (e: Exception) { 
+                weatherInfo = "Weather Unavailable"
+                e.printStackTrace() 
+            }
         }
     }
 
@@ -294,7 +298,7 @@ fun DrawerContent(bg: Color, surface: Color, text: Color, accent: Color, onClose
                         }
 
                         Button(
-                            onClick = { uriHandler.openUri("https://github.com/dev-pd-1525/") },
+                            onClick = { uriHandler.openUri("https://github.com/Amazingdude1525/") },
                             colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF24292e)), // GitHub Black
                             modifier = Modifier.weight(1f).padding(start = 4.dp)
                         ) {
@@ -358,7 +362,16 @@ fun ProfileScreen(surface: Color, text: Color, accent: Color, posts: MutableList
 fun AppBottomBar(navController: NavController, surface: Color, accent: Color) {
     val items = listOf(Triple("Feed", "feed", Icons.Default.Home), Triple("Nexus", "nexus", Icons.Default.Explore), Triple("Profile", "profile", Icons.Default.Person))
     val currentRoute = navController.currentBackStackEntryAsState().value?.destination?.route
+
     NavigationBar(containerColor = surface) {
-        items.forEach { (l, r, i) -> NavigationBarItem(icon = { Icon(i, l) }, label = { Text(l) }, selected = currentRoute == r, onClick = { navController.navigate(r) }, colors = NavigationBarItemDefaults.colors(indicatorColor = accent)) }
+        items.forEach { (label, route, icon) ->
+            NavigationBarItem(
+                selected = currentRoute == route,
+                onClick = { navController.navigate(route) },
+                icon = { Icon(icon, contentDescription = label) },
+                label = { Text(label) },
+                colors = NavigationBarItemDefaults.colors(selectedIconColor = accent, selectedTextColor = accent, indicatorColor = accent.copy(alpha = 0.1f))
+            )
+        }
     }
 }
