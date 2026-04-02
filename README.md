@@ -55,9 +55,8 @@ Feel free to reach out for feedback or just to say hi:
 ## 👨‍💻 Developer
 
 **Prateek Das**
--   Registration ID: 25BCE10599
 -   [GitHub](https://github.com/Amazingdude1525/)
 
 ---
 
-*Crafted with ❤️ and Kotlin.*
+*Crafted Kotlin.*
